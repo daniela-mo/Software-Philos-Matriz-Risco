@@ -1,0 +1,212 @@
+[07-Feb-2022 11:39:11 America/Sao_Paulo] PHP Notice:  Undefined index: residual in /home3/sistemam2vconsul/public_html/processa-gravar-avaliacao-risco-residual.php on line 45
+[07-Feb-2022 11:39:49 America/Sao_Paulo] PHP Notice:  Undefined index: futuro in /home3/sistemam2vconsul/public_html/processa-gravar-avaliacao-risco-futuro.php on line 46
+[07-Feb-2022 14:54:47 America/Sao_Paulo] PHP Notice:  Undefined variable: codigo in /home3/sistemam2vconsul/public_html/cadastro-planejamento-workflow.php on line 31
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined index: dominio in /home3/sistemam2vconsul/public_html/menu.php on line 4
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  include(/conexao.php): failed to open stream: No such file or directory in /home3/sistemam2vconsul/public_html/menu.php on line 5
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  include(): Failed opening '/conexao.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home3/sistemam2vconsul/public_html/menu.php on line 5
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 22
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 22
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 23
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 111
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 111
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 112
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 169
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 169
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 170
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 224
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 224
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 225
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 272
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 272
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 273
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 299
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 299
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 300
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 343
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 343
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 344
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 426
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 426
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 427
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 501
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 501
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 502
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/qaas.php on line 62
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/qaas.php on line 62
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/qaas.php on line 63
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/qaas.php on line 63
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/qaas.php on line 64
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/qaas.php on line 64
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/qaas.php on line 65
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/qaas.php on line 65
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/qaas.php on line 66
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/qaas.php on line 66
+[07-Feb-2022 16:32:08 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/qaas.php on line 67
+[08-Feb-2022 11:44:29 America/Sao_Paulo] PHP Notice:  Undefined variable: codigo in /home3/sistemam2vconsul/public_html/cadastro-planejamento-workflow.php on line 31
+[08-Feb-2022 11:45:28 America/Sao_Paulo] PHP Notice:  Undefined variable: codigo in /home3/sistemam2vconsul/public_html/cadastro-planejamento-workflow.php on line 31
+[09-Feb-2022 11:38:30 America/Sao_Paulo] PHP Notice:  Undefined variable: codigo in /home3/sistemam2vconsul/public_html/cadastro-planejamento-workflow.php on line 31
+[09-Feb-2022 14:48:22 America/Sao_Paulo] PHP Notice:  Undefined index: file in /home3/sistemam2vconsul/public_html/uploads.php on line 3
+[09-Feb-2022 18:41:30 America/Sao_Paulo] PHP Notice:  Undefined variable: codigo in /home3/sistemam2vconsul/public_html/cadastro-planejamento-workflow.php on line 31
+[09-Feb-2022 20:05:12 America/Sao_Paulo] PHP Notice:  Undefined variable: codigo in /home3/sistemam2vconsul/public_html/cadastro-planejamento-workflow.php on line 31
+[09-Feb-2022 20:31:28 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '>' in /home3/sistemam2vconsul/public_html/atividades-workflow.php on line 181
+[09-Feb-2022 20:31:29 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '>' in /home3/sistemam2vconsul/public_html/atividades-workflow.php on line 181
+[09-Feb-2022 21:18:45 America/Sao_Paulo] PHP Notice:  Undefined index: futuro in /home3/sistemam2vconsul/public_html/processa-gravar-avaliacao-risco-futuro.php on line 46
+[09-Feb-2022 21:18:51 America/Sao_Paulo] PHP Notice:  Undefined index: residual in /home3/sistemam2vconsul/public_html/processa-gravar-avaliacao-risco-residual.php on line 45
+[10-Feb-2022 00:17:19 America/Sao_Paulo] PHP Notice:  Undefined index: residual in /home3/sistemam2vconsul/public_html/processa-gravar-avaliacao-risco-residual.php on line 45
+[10-Feb-2022 00:17:30 America/Sao_Paulo] PHP Notice:  Undefined index: futuro in /home3/sistemam2vconsul/public_html/processa-gravar-avaliacao-risco-futuro.php on line 46
+[10-Feb-2022 00:19:38 America/Sao_Paulo] PHP Notice:  Undefined variable: cor_nivel in /home3/sistemam2vconsul/public_html/matriz-de-risco.php on line 696
+[10-Feb-2022 00:24:54 America/Sao_Paulo] PHP Notice:  Undefined variable: inserir in /home3/sistemam2vconsul/public_html/processa-gravar-avaliacao-risco-inerente.php on line 49
+[10-Feb-2022 00:30:16 America/Sao_Paulo] PHP Notice:  Undefined index: residual in /home3/sistemam2vconsul/public_html/processa-gravar-avaliacao-risco-residual.php on line 48
+[10-Feb-2022 00:31:58 America/Sao_Paulo] PHP Notice:  Undefined index: futuro in /home3/sistemam2vconsul/public_html/processa-gravar-avaliacao-risco-futuro.php on line 49
+[10-Feb-2022 08:15:07 America/Sao_Paulo] PHP Notice:  Undefined variable: codigo in /home3/sistemam2vconsul/public_html/cadastro-planejamento-workflow.php on line 31
+[10-Feb-2022 14:19:35 America/Sao_Paulo] PHP Notice:  Undefined variable: codigo in /home3/sistemam2vconsul/public_html/cadastro-planejamento-workflow.php on line 31
+[10-Feb-2022 14:40:16 America/Sao_Paulo] PHP Notice:  Undefined variable: registross in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 338
+[10-Feb-2022 14:40:18 America/Sao_Paulo] PHP Notice:  Undefined variable: registross in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 338
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined index: dominio in /home3/sistemam2vconsul/public_html/menu.php on line 4
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  include(/conexao.php): failed to open stream: No such file or directory in /home3/sistemam2vconsul/public_html/menu.php on line 5
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  include(): Failed opening '/conexao.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home3/sistemam2vconsul/public_html/menu.php on line 5
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 22
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 22
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 23
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 111
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 111
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 112
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 169
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 169
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 170
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 224
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 224
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 225
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 272
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 272
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 273
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 299
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 299
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 300
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 343
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 343
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 344
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 426
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 426
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 427
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 501
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 501
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 502
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 33
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 33
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 34
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 34
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 35
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 35
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 36
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 36
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 62
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 62
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 63
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 72
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 72
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 73
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 160
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 160
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 161
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 176
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 176
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 177
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 177
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 178
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 178
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 179
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 179
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 180
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 180
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 181
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 322
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 322
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 323
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 323
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 324
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 324
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 325
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 325
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 326
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 326
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 327
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 415
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 415
+[10-Feb-2022 14:46:48 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 416
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined index: dominio in /home3/sistemam2vconsul/public_html/menu.php on line 4
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  include(/conexao.php): failed to open stream: No such file or directory in /home3/sistemam2vconsul/public_html/menu.php on line 5
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  include(): Failed opening '/conexao.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home3/sistemam2vconsul/public_html/menu.php on line 5
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 22
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 22
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 23
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 111
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 111
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 112
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 169
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 169
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 170
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 224
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 224
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 225
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 272
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 272
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 273
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 299
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 299
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 300
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 343
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 343
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 344
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 426
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 426
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 427
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/menu.php on line 501
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/menu.php on line 501
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/menu.php on line 502
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 33
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 33
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 34
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 34
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 35
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 35
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 36
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 36
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 62
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 62
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 63
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 72
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 72
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 73
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 160
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 160
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 161
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 176
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 176
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 177
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 177
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 178
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 178
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 179
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 179
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 180
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 180
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 181
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 322
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 322
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 323
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 323
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 324
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 324
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 325
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 325
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 326
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 326
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 327
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Notice:  Undefined variable: conexao in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 415
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 415
+[10-Feb-2022 14:51:51 America/Sao_Paulo] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home3/sistemam2vconsul/public_html/planejamento-workflow.php on line 416
+[10-Feb-2022 19:48:45 America/Sao_Paulo] PHP Notice:  Undefined variable: codigo in /home3/sistemam2vconsul/public_html/cadastro-planejamento-workflow.php on line 31
+[10-Feb-2022 20:39:31 America/Sao_Paulo] PHP Notice:  Undefined variable: codigo in /home3/sistemam2vconsul/public_html/cadastro-planejamento-workflow.php on line 31
+[11-Feb-2022 13:41:02 America/Sao_Paulo] PHP Notice:  Undefined index: residual in /home3/sistemam2vconsul/public_html/processa-gravar-avaliacao-risco-residual.php on line 48
+[11-Feb-2022 13:41:08 America/Sao_Paulo] PHP Notice:  Undefined index: futuro in /home3/sistemam2vconsul/public_html/processa-gravar-avaliacao-risco-futuro.php on line 49
