@@ -42,7 +42,7 @@ $nav_menu_pagina = 'monitoramento';
 
 						<div class="row">
 							<div class="col-md-9">
-								<a href="dashboard.php"><span class="text-white breadcrumb-item">Software | Cadastro atividade</span></a>
+								<a href="dashboard.php"><span class="text-white breadcrumb-item">Software Philos | </span> <span></a>Cadastro Comite </span>
 							</div>
 						</div>
 

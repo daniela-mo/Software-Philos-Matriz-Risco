@@ -43,26 +43,26 @@ $cod_grupo = $registros['grupo'];
 
 
 ?>
-<div class="row ml-1 ">
+<div class="row ml-1 " style="width:400px;">
 
 
 
 
-    <div style="width:50%;">
+    <div>
         <table id="tabela">
             <tbody class="">
                 <?php
 
 
-                $selecao = mysqli_query($conexao, "select * from demais_areas_risco where status='1'");
+                $selecao = mysqli_query($conexao, "select * from item_qaa_risco where status='1'");
                 while ($registros = mysqli_fetch_array($selecao)) {
-                    $codigo_demais_areas = $registros['codigo_area'];
+                    $codigo_qaa_risco = $registros['criterio_correspondente'];
 
-                    $selecao_areas = mysqli_query($conexao, "select * from areas WHERE id='$codigo_demais_areas'");
-                    $registros_areas = mysqli_fetch_array($selecao_areas);
+                    $selecao_itens_qaa = mysqli_query($conexao, "select * from questoes_qaa WHERE questao_principal='0' and id='$codigo_qaa_risco' order by titulo ");
+                    $registros_qaa = mysqli_fetch_array($selecao_itens_qaa);
                 ?>
                     <tr>
-                        <td><?php echo $registros_areas['area']; ?></td>
+                        <td><?php echo $registros_qaa['titulo']; ?></td>
 
                     </tr>
 

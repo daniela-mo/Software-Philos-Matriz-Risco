@@ -18,7 +18,7 @@ $nav_menu_pagina = 'matrizderiscos';
 	<link rel="stylesheet" type="text/css" href="css/datatable.css">
 	<style>
 		.risco-oea {
-			display: none
+			display: none;
 		}
 	</style>
 </head>
@@ -68,20 +68,23 @@ $nav_menu_pagina = 'matrizderiscos';
 							</div>
 
 
-							<div class="col-md-4">
+							<div class="col-md-4 mb-4">
 								<label>Planta</label>
+
 								<select class="form-control" name="empresa" id="empresa">
-									<option value="0">Escolher Planta</option>
+									<option value=" 0">Escolher Planta</option>
 									<?php
-									$selecao_empresas = mysqli_query($conexao, "select * from filiais order by razao_social ASC");
-									while ($registros_empresas = mysqli_fetch_array($selecao_empresas)) {
+									mysqli_query($conexao, "SET NAMES 'utf8'");
+									mysqli_query($conexao, 'SET character_set_connection=utf8');
+									mysqli_query($conexao, 'SET character_set_client=utf8');
+									mysqli_query($conexao, 'SET character_set_results=utf8');
+									$selecao_empresa = mysqli_query($conexao, "select * from empresas");
+									while ($registros_empresa = mysqli_fetch_array($selecao_empresa)) {
 									?>
-										<option value="<?php echo $registros_empresas['razao_social'] ?>">
-											<?php echo $registros_empresas['razao_social'] ?> - <?php echo $registros_empresas['cnpj'] ?></option>
+
+										<option value="<?php echo $registros_empresa['id'] ?>"><?php echo $registros_empresa['razao_social'] ?></option>
 
 									<?php } ?>
-
-
 								</select>
 							</div>
 
@@ -94,58 +97,18 @@ $nav_menu_pagina = 'matrizderiscos';
 
 							</div>
 
+
+
+
 							<div class="col-md-4 mb-4">
 								<label>Origem</label>
 
 								<select class="form-control" name="cad-origem" id="cad-origem">
-									<option value="0">Escolher</option>
+									<option value="0">Escolher Origem</option>
 									<option>Análise de Processo</option>
 									<!-- <option>BIA</option> -->
-									<option>Não Conformidade</option>
+									<option>Não Conformidade</option> -->
 									<!-- <option>SWOT</option> -->
-								</select>
-							</div>
-
-							<div class="col-md-4 mb-4">
-								<label>Fator de Risco</label>
-								<input type="text" name="cad-fator" id="cad-fator" class="form-control" required>
-							</div>
-
-
-
-							<!-- <div class="col-md-4 mb-4">
-								<label>Classif. Risco Corporativo</label>
-								<select class="form-control" name="cad-classificacao-risco" id="cad-classificacao-risco">
-									<option value="0">Escolher</option>
-									<?php
-									mysqli_query($conexao, "SET NAMES 'utf8'");
-									mysqli_query($conexao, 'SET character_set_connection=utf8');
-									mysqli_query($conexao, 'SET character_set_client=utf8');
-									mysqli_query($conexao, 'SET character_set_results=utf8');
-									$selecao_areas = mysqli_query($conexao, "select * from parametrizacao");
-									while ($registros_areas = mysqli_fetch_array($selecao_areas)) {
-									?>
-										<option value="<?php echo $registros_areas['id'] ?>"><?php echo $registros_areas['nome'] ?></option>
-
-									<?php } ?>
-								</select>
-							</div> -->
-
-							<div class="col-md-5 mb-4">
-								<label>Área</label>
-								<select class="form-control" name="cad-area-risco" id="cad-area-risco" onChange="CarregarDemaisAreas()">
-									<option value="0">Escolha</option>
-									<?php
-									mysqli_query($conexao, "SET NAMES 'utf8'");
-									mysqli_query($conexao, 'SET character_set_connection=utf8');
-									mysqli_query($conexao, 'SET character_set_client=utf8');
-									mysqli_query($conexao, 'SET character_set_results=utf8');
-									$selecao_areas = mysqli_query($conexao, "select * from areas order by area ASC");
-									while ($registros_areas = mysqli_fetch_array($selecao_areas)) {
-									?>
-										<option value="<?php echo $registros_areas['id'] ?>"><?php echo $registros_areas['area'] ?></option>
-
-									<?php } ?>
 								</select>
 							</div>
 
@@ -171,49 +134,171 @@ $nav_menu_pagina = 'matrizderiscos';
 							</div>
 
 
-							<div class="col-md-3 mb-4">
-								<label>Risco OEA?</label>
-								<select class="form-control" name="cad-item-oea" id="cad-item-oea" onChange="RiscoOEA()">
-									<option>Sim</option>
-									<option selected>Não</option>
-								</select>
+							<div class="col-md-12 row mb-4">
+
+
+								<div class="col-md-3 mb-4">
+									<label>Risco OEA?</label>
+									<select class="form-control" name="cad-item-oea" id="cad-item-oea" onChange="RiscoOEA()">
+										<option>Sim</option>
+										<option selected>Não</option>
+									</select>
+								</div>
+
+
+
+
+
+
+
+								<div class="col-md-3 mb-4 risco-oea">
+									<label class="risco-oea">Item de QAA</label>
+									<select class="form-control risco-oea" name="codigo_qaa_risco" id="codigo_qaa_risco">
+										<option value="0" class="risco-oea">Escolher</option>
+										<?php
+										mysqli_query($conexao, "SET NAMES 'utf8'");
+										mysqli_query($conexao, 'SET character_set_connection=utf8');
+										mysqli_query($conexao, 'SET character_set_client=utf8');
+										mysqli_query($conexao, 'SET character_set_results=utf8');
+										$selecao_qaa = mysqli_query($conexao, "select * from questoes_qaa WHERE questao_principal='0' order by titulo ASC");
+										while ($registros_qaa = mysqli_fetch_array($selecao_qaa)) {
+										?>
+											<option class="risco-oea" value="<?php echo $registros_qaa['id'] ?>"><?php echo $registros_qaa['titulo'] ?></option>
+
+										<?php } ?>
+									</select>
+									<div id="carregar-tabela-item-qaa" style="width:50%;padding:0;">
+
+									</div>
+								</div>
+
+								<div class="col-md-1 risco-oea">
+									<h5>&nbsp;</h5>
+									<input type="button" value="Adicionar" class="btn btn-primary" onClick="AdicionarItensQaa()">
+								</div>
+
+
+
+
+								<!-- 
+								<div class="col-md-4 mb-4">
+									<label class="risco-oea">Item de QAA</label>
+									<select class="form-control risco-oea" name="cad-item-qaa" id="cad-item-qaa">
+										<option value="0">Escolher</option>
+										<?php
+										$selecao_qaa = mysqli_query($conexao, "select * from questoes_qaa WHERE questao_principal='0' order by titulo ASC");
+										while ($registros_qaa = mysqli_fetch_array($selecao_qaa)) {
+										?>
+
+											<option value="<?php echo $registros_qaa['id'] ?>"><?php echo $registros_qaa['titulo'] ?></option>
+
+										<?php } ?>
+									</select>
+								</div> -->
+
+
+								<div class="col-md-4 mt-1">
+									<label>Fator de Risco</label>
+									<input type="radio" <?php if ($registros_fator['externo_interno'] == 'Externo') { ?> checked <?php } ?> name="cad-fator" id="cad-fator" value="Externo"> Externo
+
+									<input type="radio" <?php if ($registros_fator['externo_interno'] == 'Interno') { ?> checked <?php } ?> name="cad-fator" id="cad-fator" value="Interno"> Interno
+
+								</div>
+
+
+								<!-- <div class="col-md-4 mt-1" id="retorno-fator-risco" onChange="Fator()">
+
+								</div> -->
+
+							</div>
+
+
+							<div class="col-md-12 row">
+
+
+
+								<div class="col-md-12 row">
+									<div class="col-md-3 mb-4">
+										<label>Área</label>
+										<select class="form-control" name="cad-area-risco" id="cad-area-risco">
+											<option value="0">Escolha</option>
+											<?php
+											mysqli_query($conexao, "SET NAMES 'utf8'");
+											mysqli_query($conexao, 'SET character_set_connection=utf8');
+											mysqli_query($conexao, 'SET character_set_client=utf8');
+											mysqli_query($conexao, 'SET character_set_results=utf8');
+											$selecao_areas = mysqli_query($conexao, "select * from areas order by area ASC");
+											while ($registros_areas = mysqli_fetch_array($selecao_areas)) {
+											?>
+												<option value="<?php echo $registros_areas['id'] ?>"><?php echo $registros_areas['area'] ?></option>
+
+											<?php } ?>
+										</select>
+									</div>
+
+
+
+
+									<div class="col-md-3 mb-4">
+										<label>Principais áreas impactadas pelo risco</label>
+										<select class="form-control" name="cad-area-principal" id="cad-area-principal">
+											<option value="0">Escolher Área de Atuação</option>
+											<?php
+											mysqli_query($conexao, "SET NAMES 'utf8'");
+											mysqli_query($conexao, 'SET character_set_connection=utf8');
+											mysqli_query($conexao, 'SET character_set_client=utf8');
+											mysqli_query($conexao, 'SET character_set_results=utf8');
+											$selecao_areas = mysqli_query($conexao, "select * from areas order by area ASC");
+											while ($registros_areas = mysqli_fetch_array($selecao_areas)) {
+											?>
+												<option value="<?php echo $registros_areas['id'] ?>"><?php echo $registros_areas['area'] ?></option>
+
+											<?php } ?>
+										</select>
+										<div id="carregar-tabela-area-principal" style="width:50%;padding:0;">
+
+										</div>
+									</div>
+									<div class="col-md-1 mr-5">
+										<h5>&nbsp;</h5>
+										<input type="button" value="Adicionar" class="btn btn-primary" onClick="AdicionarAreaPrincipal()">
+									</div>
+
+
+
+
+									<div class="col-md-3 mb-4">
+										<label>Demais áreas impactadas pelo risco</label>
+										<select class="form-control" name="cad-demais_areas" id="cad-demais_areas">
+											<option value="0">Escolher Área de Atuação</option>
+											<?php
+											mysqli_query($conexao, "SET NAMES 'utf8'");
+											mysqli_query($conexao, 'SET character_set_connection=utf8');
+											mysqli_query($conexao, 'SET character_set_client=utf8');
+											mysqli_query($conexao, 'SET character_set_results=utf8');
+											$selecao_areas = mysqli_query($conexao, "select * from areas order by area ASC");
+											while ($registros_areas = mysqli_fetch_array($selecao_areas)) {
+											?>
+												<option value="<?php echo $registros_areas['id'] ?>"><?php echo $registros_areas['area'] ?></option>
+
+											<?php } ?>
+										</select>
+										<div id="carregar-tabela-outras-areas" style="width:50%;padding:0;">
+
+										</div>
+									</div>
+
+									<div class="col-md-1">
+										<h5>&nbsp;</h5>
+										<input type="button" value="Adicionar" class="btn btn-primary" onClick="AdicionarOutrasAreas()">
+									</div>
+
+
+								</div>
 							</div>
 
 
 
-							<div class="col-md-5 mb-4">
-								<label class="risco-oea">Item de QAA</label>
-								<select class="form-control risco-oea" name="cad-item-qaa" id="cad-item-qaa">
-									<option value="0">Escolher</option>
-									<?php
-									$selecao_qaa = mysqli_query($conexao, "select * from questoes_qaa WHERE questao_principal='0' order by titulo ASC");
-									while ($registros_qaa = mysqli_fetch_array($selecao_qaa)) {
-									?>
-
-										<option value="<?php echo $registros_qaa['id'] ?>"><?php echo $registros_qaa['titulo'] ?></option>
-
-									<?php } ?>
-								</select>
-							</div>
-
-							<!-- <div class="col-md-3 mb-4">
-								<label class="risco-oea">&nbsp;&nbsp;</label>
-								<input type="button" class="btn btn-primary risco-oea" value="Adicionar Item" onClick="AdicionarItem()">
-							</div>
-
-
-							<div class="col-md-12 mb-4 risco-oea">
-								<h5 class="mt-4"><strong>Itens de QAA</strong></h5>
-								<div id="carregar-itens-qaa"></div>
-							</div> -->
-
-
-							<div class="col-md-12">
-
-								<h5 class="mt-4"><strong>Demais áreas impactadas pelo risco</strong></h5>
-								<div id="carregar-demais-areas-impactadas-pelo-risco"></div>
-
-							</div>
 
 							<div class="col-md-12">
 								<input type="submit" value="Gravar" class="btn btn-primary">
@@ -261,39 +346,39 @@ $nav_menu_pagina = 'matrizderiscos';
 
 
 
-		function ItensQaa() {
+		// function ItensQaa() {
 
 
 
-			$a(document).ready(function() {
-				$a('#tabela-itens-qaa').DataTable();
-			});
+		// 	$a(document).ready(function() {
+		// 		$a('#tabela-itens-qaa').DataTable();
+		// 	});
 
 
 
-			$a("#tabela-itens-qaa").dataTable({
-				"bJQueryUI": true,
-				"oLanguage": {
-					"sProcessing": "Processando...",
-					"sLengthMenu": "Mostrar _MENU_ registros",
-					"sZeroRecords": "Não foram encontrados resultados",
-					"sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
-					"sInfoEmpty": "Mostrando de 0 até 0 de 0 registros",
-					"sInfoFiltered": "",
-					"sInfoPostFix": "",
-					"sSearch": "Buscar:",
-					"sUrl": "",
-					"oPaginate": {
-						"sFirst": "Primeiro",
-						"sPrevious": "Anterior",
-						"sNext": "Seguinte",
-						"sLast": "Último"
-					}
-				}
-			})
+		// 	$a("#tabela-itens-qaa").dataTable({
+		// 		"bJQueryUI": true,
+		// 		"oLanguage": {
+		// 			"sProcessing": "Processando...",
+		// 			"sLengthMenu": "Mostrar _MENU_ registros",
+		// 			"sZeroRecords": "Não foram encontrados resultados",
+		// 			"sInfo": "Mostrando de _START_ até _END_ de _TOTAL_ registros",
+		// 			"sInfoEmpty": "Mostrando de 0 até 0 de 0 registros",
+		// 			"sInfoFiltered": "",
+		// 			"sInfoPostFix": "",
+		// 			"sSearch": "Buscar:",
+		// 			"sUrl": "",
+		// 			"oPaginate": {
+		// 				"sFirst": "Primeiro",
+		// 				"sPrevious": "Anterior",
+		// 				"sNext": "Seguinte",
+		// 				"sLast": "Último"
+		// 			}
+		// 		}
+		// 	})
 
 
-		}
+		// }
 	</script>
 
 
@@ -322,80 +407,91 @@ $nav_menu_pagina = 'matrizderiscos';
 			$f('#cad-implementacao').hide()
 			$f('#label-implementacao').hide()
 
+
+
+
 			LimparTabelaOEA()
-			CarregarDemaisAreas()
-			CarregarProcessos()
+			// CarregarDemaisAreas()
+			// CarregarProcessos()
+			CarregarFatorRisco()
+			// CarregarAreasApoioRisco()
 
 		})
 
 
-		function CarregarDemaisAreas() {
-
-			var codigo = $f('#cad-area-risco option:selected').val()
-			$f.ajax({
-				type: 'post',
-				data: 'codigo=' + codigo,
-				url: 'funcoes/tabela-demais-areas-impactadas.php',
-				success: function(retorno) {
-					$f('#carregar-demais-areas-impactadas-pelo-risco').html(retorno)
-				}
-			})
-			CarregarProcessos()
-		}
-
-		function CarregarProcessos() {
-
-			var codigo = $f('#cad-area-risco option:selected').val()
-			if (codigo == '') {
-				codigo = 0
-			}
-			$f.ajax({
-				type: 'post',
-				data: 'codigo=' + codigo,
-				url: 'funcoes/identificacao-risco-processos.php',
-				success: function(retorno) {
-					$f('#carregar-processos').html(retorno)
-				}
-			})
-
-		}
-
-
-		function CarregarItensQaa() {
-
-			$f.ajax({
-				type: 'post',
-				data: 'codigo=',
-				url: 'funcoes/carregar-itens-qaa.php',
-				success: function(retorno) {
-					$f('#carregar-itens-qaa').html(retorno)
-
-				}
-			})
-
-
-		}
 
 
 
 
-		function AdicionarItem() {
 
-			var item = $f('#cad-item-qaa option:selected').val()
+		// function CarregarDemaisAreas() {
 
-			$f.ajax({
-				type: 'post',
-				data: 'item=' + item,
-				url: 'funcoes/gravar-item-qaa.php',
-				success: function(retorno) {
+		// 	var codigo = $f('#cad-area-risco option:selected').val()
+		// 	$f.ajax({
+		// 		type: 'post',
+		// 		data: 'codigo=' + codigo,
+		// 		url: 'funcoes/tabela-demais-areas-impactadas.php',
+		// 		success: function(retorno) {
+		// 			$f('#carregar-demais-areas-impactadas-pelo-risco').html(retorno)
+		// 		}
+		// 	})
+		// 	CarregarProcessos()
+		// }
 
-					CarregarItensQaa()
-					salvarItens()
+		// function CarregarProcessos() {
+
+		// 	var codigo = $f('#cad-area-risco option:selected').val()
+		// 	if (codigo == '') {
+		// 		codigo = 0
+		// 	}
+		// 	$f.ajax({
+		// 		type: 'post',
+		// 		data: 'codigo=' + codigo,
+		// 		url: 'funcoes/identificacao-risco-processos.php',
+		// 		success: function(retorno) {
+		// 			$f('#carregar-processos').html(retorno)
+		// 		}
+		// 	})
+
+		// }
 
 
-				}
-			})
-		}
+		// function CarregarItensQaa() {
+
+		// 	$f.ajax({
+		// 		type: 'post',
+		// 		data: 'codigo=',
+		// 		url: 'funcoes/carregar-itens-qaa.php',
+		// 		success: function(retorno) {
+		// 			$f('#carregar-itens-qaa').html(retorno)
+
+		// 		}
+		// 	})
+
+
+		// }
+
+
+
+
+
+		// function AdicionarItem() {
+
+		// 	var item = $f('#cad-item-qaa option:selected').val()
+
+		// 	$f.ajax({
+		// 		type: 'post',
+		// 		data: 'item=' + item,
+		// 		url: 'funcoes/gravar-item-qaa.php',
+		// 		success: function(retorno) {
+
+		// 			CarregarItensQaa()
+		// 			salvarItens()
+
+
+		// 		}
+		// 	})
+		// }
 
 
 
@@ -448,6 +544,7 @@ $nav_menu_pagina = 'matrizderiscos';
 
 		}
 
+
 		function LimparTabelaOEA() {
 
 			$f.ajax({
@@ -456,6 +553,29 @@ $nav_menu_pagina = 'matrizderiscos';
 				url: 'funcoes/excluir-tabela-temp-risco-qaa.php',
 				success: function(retorno) {}
 			})
+		}
+
+
+		function Fator() {
+			$f('#cad-fator:checked').val()
+		}
+
+		function CarregarFatorRisco(codigo) {
+
+			if (codigo == '') {
+				codigo = 0
+			}
+
+			$f.ajax({
+				type: 'post',
+				data: 'codigo=' + codigo,
+				url: 'ver-fator-risco.php',
+				success: function(retorno) {
+					$f('#retorno-fator-risco').html(retorno);
+
+				}
+			})
+
 		}
 	</script>
 
@@ -469,6 +589,135 @@ $nav_menu_pagina = 'matrizderiscos';
 		}
 		AtivarLink()
 	</script>
+
+
+
+	<script>
+		$c = jQuery.noConflict()
+
+
+		// -----------------DEMAIS AREAS----------------
+
+
+
+
+
+
+
+		function CarregarTabelaPrincipalArea() {
+			$c.ajax({
+				type: 'post',
+				data: 'codigo=',
+				url: 'tabela-area-principal.php',
+				success: function(retorno) {
+					$c("#carregar-tabela-area-principal").html(retorno)
+
+				}
+			})
+
+		}
+
+		function AdicionarAreaPrincipal() {
+
+			var codigo_area_principal = $c('#cad-area-principal option:selected').val()
+			if (codigo_area_principal != '0') {
+				$c.ajax({
+					type: 'post',
+					data: 'area=' + codigo_area_principal,
+					url: 'funcoes/gravar-area-principal.php',
+					success: function(retorno) {
+						CarregarTabelaPrincipalArea()
+						// $f('.risco-oea').hide()
+					}
+				})
+			}
+		}
+
+
+
+		function CarregarTabelaOutrasAreas() {
+			$c.ajax({
+				type: 'post',
+				data: 'codigo=',
+				url: 'tabela-demais-areas-risco.php',
+				success: function(retorno) {
+					$c("#carregar-tabela-outras-areas").html(retorno)
+
+				}
+			})
+
+		}
+
+		function AdicionarOutrasAreas() {
+
+			var codigo_demais_areas = $c('#cad-demais_areas option:selected').val()
+			if (codigo_demais_areas != '0') {
+				$c.ajax({
+					type: 'post',
+					data: 'area=' + codigo_demais_areas,
+					url: 'funcoes/gravar-demais-areas-risco.php',
+					success: function(retorno) {
+						CarregarTabelaOutrasAreas()
+						// $f('.risco-oea').hide()
+					}
+				})
+			}
+		}
+
+
+		function CarregarTabelaItemQaa() {
+			$c.ajax({
+				type: 'post',
+				data: 'titulo=',
+				url: 'tabela-itens-qaa.php',
+				success: function(retorno) {
+					$c("#carregar-tabela-item-qaa").html(retorno)
+
+				}
+			})
+
+		}
+
+		function AdicionarItensQaa() {
+
+			var codigo_qaa_risco = $c('#codigo_qaa_risco option:selected').val()
+			if (codigo_qaa_risco != '0') {
+				$c.ajax({
+					type: 'post',
+					data: 'titulo=' + codigo_qaa_risco,
+					url: 'funcoes/gravar-item-qaa-risco.php',
+					success: function(retorno) {
+						CarregarTabelaItemQaa()
+						// $f('.risco-oea').hide()
+					}
+				})
+			}
+		}
+	</script>
+
+
+
+
+
+	<script>
+		$rodape = jQuery.noConflict()
+
+		function AtivarLink() {
+			$rodape('#<?php echo $nav_menu_principal ?>').addClass('show')
+			$rodape('#menu-<?php echo $nav_menu_pagina ?>').css('font-weight', 'bold')
+
+		}
+		AtivarLink()
+	</script>
+
+
+
+
+	<style>
+		.cad-area-apoio-risco {
+			display: none
+		}
+	</style>
 
 </body>
 

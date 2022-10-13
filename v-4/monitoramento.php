@@ -74,7 +74,7 @@ $nav_menu_pagina = 'monitoramento';
 
 						<div class="col-md-9">
 
-							<span class="text-white breadcrumb-item"><a href="dashboard.php" class="text-light">Software Philos</a> | MONITORAMENTO</span>
+							<span class="text-white breadcrumb-item"><a href="dashboard.php" class="text-light">Software Philos</a> | COMITÊ</span>
 
 						</div>
 
@@ -106,7 +106,7 @@ $nav_menu_pagina = 'monitoramento';
 
 							<div class="col-md-12 mb-3">
 
-								<h3 class="mt-4">MONITORAMENTO</h3>
+								<h3 class="mt-4">COMITÊ</h3>
 								<?php
 								$verificar_grupo = mysqli_query($conexao, "select * from grupos_permissoes WHERE codigo_menu='20' and codigo_grupo='$cod_grupo' and cadastrar='1' ");
 								$numero_grupo = mysqli_num_rows($verificar_grupo);
@@ -156,7 +156,7 @@ $nav_menu_pagina = 'monitoramento';
 
 											<tr>
 
-												<td><a class="text-dark" href="comite.php?cod=<?php echo $registros['id'] ?>"><?php echo $registros['nome'] ?></a></td>
+												<td><a class="text-dark" href="comite.php?cod=<?php echo $registros['id'] ?>"><?php echo $registros['nome_comite'] ?></a></td>
 
 
 

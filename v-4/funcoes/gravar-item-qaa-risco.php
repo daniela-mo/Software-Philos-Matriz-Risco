@@ -4,7 +4,7 @@ session_start();
 $obterdominio = $_SESSION['dominio'];
 include('../' . $obterdominio . '/' . 'conexao.php');
 
-$area_outras = $_POST['area'];
+$codigo_qaa_risco = $_POST['titulo'];
 // $codigo = $_POST['codigo'];
 
 
@@ -20,13 +20,13 @@ $codigoa = $registr['codigo'];
 $codigoa = $codigoa + 1;
 
 
-$selecao2 = mysqli_query($conexao, "select * from demais_areas_risco WHERE codigo_area='$area_outras'");
+$selecao2 = mysqli_query($conexao, "select * from item_qaa_risco WHERE criterio_correspondente='$codigo_qaa_risco'");
 $num = mysqli_num_rows($selecao2);
 if ($num == 0) {
 
 
 
-    $gravar = mysqli_query($conexao, "insert into demais_areas_risco(codigo_area,codigo_matriz_risco,status)values('$area_outras','$codigoa','1') ");
+    $gravar = mysqli_query($conexao, "insert into item_qaa_risco(criterio_correspondente,codigo_matriz_risco,status)values('$codigo_qaa_risco','$codigoa','1') ");
 
 
 

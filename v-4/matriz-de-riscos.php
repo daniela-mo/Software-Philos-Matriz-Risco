@@ -131,7 +131,7 @@ $nav_menu_pagina = 'matrizderiscos';
                                 $selecao = mysqli_query($conexao, "select * from identificacao_do_risco WHERE codigo_area='$exibir_area_principal' ");
                                 while ($registros_matriz = mysqli_fetch_array($selecao)) {
                                     $classificacao_risco = $registros_matriz['classificacao_risco'];
-                                    $id    = $registros_matriz['id']
+                                    $id = $registros_matriz['id']
                                 ?>
                                     <tr>
 

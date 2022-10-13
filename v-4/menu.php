@@ -45,7 +45,7 @@ $user_email = $registros['email'];
 	}
 
 	input {
-		'type=search'
+		'type=search';
 	}
 
 		{
@@ -336,9 +336,9 @@ $user_email = $registros['email'];
 
 
 
-					<!-- <li>
-						<a href="monitoramento.php" id="menu-monitoramento">Monitoramento</a>
-					</li> -->
+					<li>
+						<a href="monitoramento.php" id="menu-monitoramento">Comitê</a>
+					</li>
 
 
 

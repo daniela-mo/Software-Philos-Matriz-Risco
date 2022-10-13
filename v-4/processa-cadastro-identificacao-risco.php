@@ -3,10 +3,12 @@ session_start();
 $obterdominio = $_SESSION['dominio'];
 include($obterdominio . '/' . 'conexao.php');;
 
+
+@$codigo = $_POST['codigo'];
 $evento = $_POST['cad-evento'];
 $empresa = $_POST['empresa'];
 $origem = $_POST['cad-origem'];
-// $fator = $_POST['cad-fator'];
+$fator = $_POST['cad-fator'];
 $data_id_risco = $_POST['cad-data-id-risco'];
 
 $data_id_risco = str_replace('/', '-', $data_id_risco);
@@ -22,7 +24,6 @@ $data_id_risco = $ano_de . "-" . $mes_de . "-" . $dia_de;
 $itens = $_POST['cad-item-qaa'];
 $classificacao_risco = $_POST['cad-classificacao-risco'];
 $area_risco = $_POST['cad-area-risco'];
-$area_principal_risco = $_POST['cad-area-principal-risco'];
 $processo = $_POST['cad-processo'];
 $item_oea = $_POST['cad-item-oea'];
 @$implementacao = $_POST['cad-implementacao'];
@@ -55,18 +56,6 @@ $codigoa = $registr['codigo'];
 $codigoa = $codigoa + 1;
 
 
-$fator = $_POST['cad-fator-risco'][0];
-
-mysqli_query($conexao, "SET NAMES 'utf8'");
-mysqli_query($conexao, 'SET character_set_connection=utf8');
-mysqli_query($conexao, 'SET character_set_client=utf8');
-mysqli_query($conexao, 'SET character_set_results=utf8');
-
-$selecao_fator = mysqli_query($conexao, "select * from fator_risco WHERE id='$fator'");
-$registros_fator = mysqli_fetch_array($selecao_fator);
-$nome_fator = $registros_fator['nome-fator-risco'];
-
-
 
 
 $inserir = mysqli_query($conexao, "insert into identificacao_do_risco(
@@ -82,8 +71,7 @@ item_oea,
 implementacao,
 codigo_area,
 codigo,
-empresa,
-principal_area
+empresa
 )values(
 
 '$evento',
@@ -98,42 +86,21 @@ principal_area
 '$implementacao',
 '$area_risco',
 '$codigoa',
-'$empresa',
-'$area_principal_risco'
+'$empresa'
 
 )");
 
 if ($inserir) {
-	$ultimo_registro = mysqli_query($conexao, "select * from identificacao_do_risco order by id DESC");
-	$registros_ultimo_registro = mysqli_fetch_array($ultimo_registro);
-	$codigo = $registros_ultimo_registro['id'];
 
-
-	@$responsaveis_areas = $_POST['areas'];
-	if (isset($responsaveis_areas)) {
-		foreach ($responsaveis_areas as $valor) {
-
-			$selecao_area = mysqli_query($conexao, "select * from areas WHERE id='$valor'");
-			$registros_areas = mysqli_fetch_array($selecao_area);
-			$area = $registros_areas['area'];
-
-			$inserir = mysqli_query($conexao, "insert into demais_areas_risco(area,codigo_id_risco)values('$area','$codigo')");
-		}
-	}
-
-
-	// $selecao_area=mysqli_query($conexao,"select * from areas WHERE id='$codigo_area'");
-	// $registros_area=mysqli_fetch_array($selecao_area);	
-	// $nome_area=$registros_area['area'];
-
-	// $inserir_areas=mysqli_query($conexao,"insert into responsaveis_areas(codigo_area,codigo_usuario,area,data,hora)values('$codigo_area','$codigo_usuario','$nome_area','$data','$hora') ");	
-
-
+	$alterar =  mysqli_query($conexao, "update area_principal_risco set status='2' WHERE codigo_matriz_risco='$codigoa'");
+	$alterar2 =  mysqli_query($conexao, "update demais_areas_risco set status='2' WHERE codigo_matriz_risco='$codigoa'");
+	$alterar3 =  mysqli_query($conexao, "update item_qaa_risco set status='2' WHERE codigo_matriz_risco='$codigoa'");
 
 ?>
 
 	<script>
-		location.href = "matriz-de-risco.php?cod=<?php echo $codigo ?>"
+		location.href = "matriz-de-risco.php?cod=<?php echo $registr['id'] ?>"
+		alert("Cadastro realizado")
 		// location.href = "cadastro-identificacao-de-risco.php"
 	</script>
 

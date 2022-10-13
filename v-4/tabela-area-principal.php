@@ -39,9 +39,6 @@ $tipo = $registros['tipo'];
 $id_usuario = $registros['id'];
 $cod_grupo = $registros['grupo'];
 
-
-
-
 ?>
 <div class="row ml-1 ">
 
@@ -54,11 +51,11 @@ $cod_grupo = $registros['grupo'];
                 <?php
 
 
-                $selecao = mysqli_query($conexao, "select * from demais_areas_risco where status='1'");
+                $selecao = mysqli_query($conexao, "select * from area_principal_risco where status='1'");
                 while ($registros = mysqli_fetch_array($selecao)) {
-                    $codigo_demais_areas = $registros['codigo_area'];
+                    $codigo_area_principal = $registros['codigo_area'];
 
-                    $selecao_areas = mysqli_query($conexao, "select * from areas WHERE id='$codigo_demais_areas'");
+                    $selecao_areas = mysqli_query($conexao, "select * from areas WHERE id='$codigo_area_principal'");
                     $registros_areas = mysqli_fetch_array($selecao_areas);
                 ?>
                     <tr>

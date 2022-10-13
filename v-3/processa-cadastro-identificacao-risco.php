@@ -92,7 +92,7 @@ if ($inserir) {
 ?>
 
 	<script>
-		location.href = "matriz-de-risco.php?cod=<?php echo $codigo ?>"
+		location.href = "matriz-de-risco.php?cod=<?php echo $codigoa ?>"
 		// location.href = "cadastro-identificacao-de-risco.php"
 	</script>
 
