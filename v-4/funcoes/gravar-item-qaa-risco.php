@@ -5,7 +5,7 @@ $obterdominio = $_SESSION['dominio'];
 include('../' . $obterdominio . '/' . 'conexao.php');
 
 $codigo_qaa_risco = $_POST['titulo'];
-// $codigo = $_POST['codigo'];
+$codigo = $_POST['codigo'];
 
 
 mysqli_query($conexao, "SET NAMES 'utf8'");
@@ -20,18 +20,18 @@ $codigoa = $registr['codigo'];
 $codigoa = $codigoa + 1;
 
 
-$selecao2 = mysqli_query($conexao, "select * from item_qaa_risco WHERE criterio_correspondente='$codigo_qaa_risco'");
-$num = mysqli_num_rows($selecao2);
-if ($num == 0) {
+// $selecao2 = mysqli_query($conexao, "select * from item_qaa_risco WHERE criterio_correspondente='$codigo_qaa_risco'");
+// $num = mysqli_num_rows($selecao2);
+// if ($num == 0) {
 
 
 
-    $gravar = mysqli_query($conexao, "insert into item_qaa_risco(criterio_correspondente,codigo_matriz_risco,status)values('$codigo_qaa_risco','$codigoa','1') ");
+$gravar = mysqli_query($conexao, "insert into item_qaa_risco(criterio_correspondente,codigo_matriz_risco,status)values('$codigo_qaa_risco','$codigoa','1') ");
 
 
 
 
-    if ($gravar) {
+if ($gravar) {
 
 
 ?>
@@ -41,6 +41,6 @@ if ($num == 0) {
 
 
 <?php
-    }
 }
+// }
 ?>

@@ -8,6 +8,8 @@ mysqli_query($conexao, "SET NAMES 'utf8'");
 mysqli_query($conexao, 'SET character_set_connection=utf8');
 mysqli_query($conexao, 'SET character_set_client=utf8');
 mysqli_query($conexao, 'SET character_set_results=utf8');
+$abas = $_POST['conteudo3'];
+
 $codigo_matriz_de_risco = $_POST['codigo-matriz-de-risco'];
 $classificacao_risco = $_POST['classificacao-risco'];
 $probabilidade = $_POST['cad-probabilidade-avaliacao'];
@@ -67,13 +69,14 @@ data
 ?>
 
 		<script>
+			// location.href = 'matriz-de-risco.php?cod=<?php echo $codigo_matriz_de_risco ?>&abas=avaliacao'
 			location.href = 'matriz-de-risco.php?cod=<?php echo $codigo_matriz_de_risco ?>&abas=avaliacao'
 		</script>
 
 	<?php } else { ?>
 
 		<script>
-			location.href = 'matriz-de-risco.php?cod=<?php echo $codigo_matriz_de_risco ?>&abas=avaliacao'
+			// location.href = 'matriz-de-risco.php?cod=<?php echo $codigo_matriz_de_risco ?>&abas=avaliacao'
 		</script>
 
 	<?php }
@@ -81,7 +84,7 @@ data
 
 	<script>
 		alert("Todos os campos de Avaliação de Risco Inerente precisam ser selecionados!")
-		location.href = 'matriz-de-risco.php?cod=<?php echo $codigo_matriz_de_risco ?>&abas=avaliacao'
+		// location.href = 'matriz-de-risco.php?cod=<?php echo $codigo_matriz_de_risco ?>&abas=avaliacao'
 	</script>
 
 <?php } ?>

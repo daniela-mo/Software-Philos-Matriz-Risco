@@ -42,10 +42,10 @@ $gravar = mysqli_query($conexao, "insert into workflow(codigo_matriz_risco,plane
 
 
 if ($gravar) { ?>
-    <script>
+    <!-- <script>
         alert('Tratamento cadastrado')
         location.href = "http://50.19.17.159/matriz-de-risco.php?cod=113&tratamento=1"
-    </script>
+    </script> -->
 
 <?php } else { ?>
 

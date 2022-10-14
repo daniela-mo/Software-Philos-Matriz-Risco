@@ -31,7 +31,7 @@ if ($numero == 0) {
 
 ?>
         <script>
-            alert('deu certo')
+            // alert('deu certo')
         </script>
         <?php
         // $gravar = mysqli_query($conexao, "insert into identificacao_do_risco set criterio_correspondente='$codigo_qaa' where id') ");

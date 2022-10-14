@@ -54,7 +54,7 @@ $cod_grupo = $registros['grupo'];
                 <?php
 
 
-                $selecao = mysqli_query($conexao, "select * from item_qaa_risco where status='1'");
+                $selecao = mysqli_query($conexao, "select * from item_qaa_risco where status='1' ");
                 while ($registros = mysqli_fetch_array($selecao)) {
                     $codigo_qaa_risco = $registros['criterio_correspondente'];
 

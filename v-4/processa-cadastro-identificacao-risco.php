@@ -41,6 +41,11 @@ mysqli_query($conexao, 'SET character_set_results=utf8');
 // $item = $registros_item['item'];
 
 
+$selecao_empresa =  mysqli_query($conexao, "select * from empresas WHERE id='$empresa'");
+$registros_empresa = mysqli_fetch_array($selecao_empresa);
+$nome_empresa = $registros_empresa['razao_social'];
+
+
 $selecao_qaa = mysqli_query($conexao, "select * from questoes_qaa WHERE id='$itens'");
 $registros_qaa = mysqli_fetch_array($selecao_qaa);
 $item_qaa = $registros_qaa['titulo'];
@@ -86,7 +91,7 @@ empresa
 '$implementacao',
 '$area_risco',
 '$codigoa',
-'$empresa'
+'$nome_empresa'
 
 )");
 
@@ -95,17 +100,24 @@ if ($inserir) {
 	$alterar =  mysqli_query($conexao, "update area_principal_risco set status='2' WHERE codigo_matriz_risco='$codigoa'");
 	$alterar2 =  mysqli_query($conexao, "update demais_areas_risco set status='2' WHERE codigo_matriz_risco='$codigoa'");
 	$alterar3 =  mysqli_query($conexao, "update item_qaa_risco set status='2' WHERE codigo_matriz_risco='$codigoa'");
-
-?>
-
-	<script>
-		location.href = "matriz-de-risco.php?cod=<?php echo $registr['id'] ?>"
-		alert("Cadastro realizado")
-		// location.href = "cadastro-identificacao-de-risco.php"
-	</script>
+}
 
 
-<?php } else {  ?>
+if ($alterar) {
+	if ($alterar2) {
+		if ($alterar3) { ?>
+			<script>
+				// location.href = "matriz-de-risco.php?cod=<?php echo $registr['id'] ?>"
+
+				alert("Cadastro realizado")
+				location.href = "matriz-de-riscos.php"
+				// location.href = "cadastro-identificacao-de-risco.php"
+			</script>
+
+
+	<?php }
+	}
+} else {  ?>
 
 	<script>
 		alert("Cadastro não pode ser realizado")

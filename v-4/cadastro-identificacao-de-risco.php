@@ -84,6 +84,13 @@ $nav_menu_pagina = 'matrizderiscos';
 
 										<option value="<?php echo $registros_empresa['id'] ?>"><?php echo $registros_empresa['razao_social'] ?></option>
 
+									<?php }
+									$selecao_empresa = mysqli_query($conexao, "select * from filiais");
+									while ($registros_empresa = mysqli_fetch_array($selecao_empresa)) {
+									?>
+
+										<option value="<?php echo $registros_empresa['id'] ?>"><?php echo $registros_empresa['razao_social'] ?></option>
+
 									<?php } ?>
 								</select>
 							</div>
