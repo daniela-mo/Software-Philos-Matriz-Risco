@@ -112,7 +112,7 @@ if ($alterar) {
 			<script>
 				// location.href = "matriz-de-risco.php?cod=<?php echo $registr['id'] ?>"
 
-				alert("Cadastro realizado")
+				// alert("Cadastro realizado")
 				location.href = "matriz-de-riscos.php"
 				// location.href = "cadastro-identificacao-de-risco.php"
 			</script>

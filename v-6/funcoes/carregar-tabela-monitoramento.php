@@ -14,14 +14,14 @@ $codigo_matriz = $_POST['codigo_matriz'];
 
 
 
-<table id="example2" class="display mt-8" style="width:120%">
+<table id="example2" class="display mt-8" style="width:100%">
     <thead>
         <tr>
             <th class="w-25">Definição de KPI's</th>
             <th>Periodicidade</th>
             <th>Responsável</th>
-            <th class="w-25">Objetivo atendido?</th>
-            <th class="w-100">Indicação de necessidade de revisão</th>
+            <th class="">Objetivo atendido?</th>
+            <th class="">Indicação de necessidade de revisão</th>
 
         </tr>
     </thead>
@@ -47,16 +47,16 @@ $codigo_matriz = $_POST['codigo_matriz'];
                     <?php echo $registros['definicao_kpis'] ?>
                 </td>
 
-                <td style="margin-right:40px;text-align:left;padding-left:px;"><?php echo $registros['periodicidade'] ?></td>
+                <td style="margin-right:40px;text-align:left;padding-left:16px;"><?php echo $registros['periodicidade'] ?></td>
 
 
                 <td style="margin-right:90px;text-align:left;padding-left:16px;">
                     <?php echo $registros['responsavel'] ?>
                 </td>
-                <td style="margin-right:40px;text-align:left;padding-left:16px;">
+                <td style="margin-right:40px;text-align:left;padding-left:18px;">
                     <?php echo $registros['objetivo_sim_nao'] ?>
                 </td>
-                <td style="margin-right:80px;text-align:left;padding-left:60px;border:1px solid red">
+                <td style="margin-right:20px;text-align:left;padding-left:18px;">
                     <?php echo $registros['necessidade_revisao_sim_nao'] ?>
                 </td>
 

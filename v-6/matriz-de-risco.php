@@ -1257,7 +1257,7 @@ $nav_menu_pagina = 'matrizderiscos';
 
             </div>
           </div>
-          <div id="carregar-tabela-monitoramento" style="width:130%"></div>
+          <div id="carregar-tabela-monitoramento" style="width:100%"></div>
         </div>
 
 
@@ -3624,7 +3624,7 @@ $nav_menu_pagina = 'matrizderiscos';
 
           $g.ajax({
             type: 'post',
-            data: 'nome=' + nome + '&objetivo=' + objetivo + '&numero=' + numero,
+            data: 'codigo=<?php echo $_REQUEST['cod'] ?>&nome=' + nome + '&objetivo=' + objetivo + '&numero=' + numero,
             url: 'funcoes/gravar-itens-controles-existentes.php',
             success: function(retorno) {
               CarregarTabelaControlesExistentes()
