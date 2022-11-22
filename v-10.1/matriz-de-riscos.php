@@ -521,7 +521,7 @@ $nav_menu_pagina = 'matrizderiscos';
 
                 }
             })
-        });
+        }, 2000);
 
 
 

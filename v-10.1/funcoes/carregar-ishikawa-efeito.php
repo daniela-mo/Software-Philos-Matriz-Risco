@@ -11,7 +11,7 @@ $setor = $_POST['setor'];
     <tr>
         <th class="col-md-1">Id</th>
         <th>Efeito</th>
-        <!-- <th class="col-md-1">Editar</th> -->
+        <th class="col-md-1">Editar</th>
         <th class="col-md-1">Excluir</th>
     </tr>
 
@@ -29,8 +29,8 @@ $setor = $_POST['setor'];
             <td><?php echo $registros_tabela['efeito'] ?></td>
 
 
-            <!-- <td class="col-md-1" style="text-align:center;"><a class="pointer" onClick="EditarEfeito(<?php echo $registros_tabela['id'] ?>)" data-toggle="modal" data-target="#efeitoModal">
-                    <span class="fa fa-edit"></span></a></td> -->
+            <td class="col-md-1" style="text-align:center;"><a class="pointer" onClick="EditarEfeito(<?php echo $registros_tabela['id'] ?>)" data-toggle="modal" data-target="#efeitoModal">
+                    <span class="fa fa-edit"></span></a></td>
 
             <td class="col-md-1" style="text-align:center;"><a class="pointer" onClick="ExcluirEfeito(<?php echo $registros_tabela['id'] ?>)">
                     <span class="fa fa-trash"></span></a></td>

@@ -5,6 +5,7 @@ $nav_menu_pagina = 'qaa';
 @$mod = $_REQUEST['mod'];
 ?>
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
@@ -111,7 +112,7 @@ $nav_menu_pagina = 'qaa';
 				</div>
 				<div class="row ml-1 mr-1">
 					<div class="col-md-12">
-						<input type="button" class="btn btn-primary mb-5" value="Voltar" onclick='history.go(-1)'><br>
+						<input type="button" class="btn btn-primary mb-3" value="Voltar" onclick='history.go(-1)'><br>
 
 						<?php
 
@@ -124,7 +125,7 @@ $nav_menu_pagina = 'qaa';
 						if ($numero_grupo >= 1) {
 						?>
 
-							<a data-toggle="modal" data-target="#NovoBloco" style="padding-top:10px;padding-left:8px;padding-right:8px;padding-bottom:10px;margin-bottom:10px;border-radius:5px;background:#031335;color:#fff;text-decoration:none;cursor:pointer;"> Novo Bloco</a>
+							<a data-toggle="modal" data-target="#NovoBloco" style="cursor: pointer"> <img src="imgs/icone-mais.png" width="25" height="25" alt="" /> Novo Bloco</a>
 						<?php } ?>
 
 
@@ -308,10 +309,6 @@ $nav_menu_pagina = 'qaa';
 
 										<span style="margin-left: 10px; cursor: pointer" class="float-right" onClick="DelBloco(<?php echo $codigo_bloco ?>)"> <i class="fa fa-trash"></i></span>
 
-
-
-
-
 									<?php } ?>
 
 
@@ -353,13 +350,10 @@ $nav_menu_pagina = 'qaa';
 											if ($numero_grupo >= 1) {
 											?>
 
-
 												<span style="margin-left: 10px; cursor: pointer" class="float-right" data-toggle="modal" data-target="#EditarCriterio"> <i class="fa fa-edit" onClick="EditarCriterio(<?php echo $registros1['id'] ?>)"></i></span>
 
 
 												<span class="float-right pointer" onClick="DelQuestao(<?php echo $registros1['id'] ?>)"><i class="fa fa-trash"></i></span>
-
-
 
 											<?php } ?>
 
@@ -367,7 +361,6 @@ $nav_menu_pagina = 'qaa';
 
 
 										<div class="collapse list-group-level2" id="sub-sub-menu<?php echo $a ?>_<?php echo $b ?>">
-
 
 											<?php
 											$selecao2 = mysqli_query($conexao, "select * from questoes_qaa WHERE questao_principal='$codigo1' and codigo_bloco='$codigo_bloco' and versao='$versao' ");
@@ -466,42 +459,18 @@ $nav_menu_pagina = 'qaa';
 									}
 									?>
 
-
 								</div>
-
-
-
 							<?php $a = $a + 1;
 							} ?>
 
-
-
-
-
-
 							<!-----------Final Main Menu ---------------->
-
-
-
-
-
-
-
 
 							<div id="resposta-qaa"></div>
 
-
-
 						</div>
-
-
-
-
 					</div>
 
 					<div class="col-md-7 mt-4" id="resposta-questoes">
-
-
 
 					</div>
 
@@ -539,17 +508,11 @@ $nav_menu_pagina = 'qaa';
 								</tr>
 
 							<?php } ?>
-
 						</table>
-
 					</div>
-
 					<input type="hidden" id="obter-codigo-bloco">
-
-
 				</div>
 			</div>
-
 		</div>
 
 
@@ -575,12 +538,7 @@ $nav_menu_pagina = 'qaa';
 						while ($registros_modalidades = mysqli_fetch_array($selecao_modalidades)) {
 						?>
 
-
-
-
-
 							<input type="checkbox" name="modalidade[]" id="cad-modalidade[]" value="<?php echo $registros_modalidades['id']; ?>"> <?php echo $registros_modalidades['modalidade']; ?><br>
-
 
 						<?php } ?>
 
@@ -617,26 +575,19 @@ $nav_menu_pagina = 'qaa';
 						<label class="mt-3 tipo-questao">Questão Mãe</label>
 						<div id="carregar-select-qaa-questao" class="tipo-questao"></div>
 
-
-
-
 						<label class="mt-3 tipo-topico">Título</label>
 						<label class="mt-3 tipo-questao">Título</label>
 						<input type="text" class="form-control  tipo-geral" id="cad-titulo-questao">
 
-
-
-
 						<label class="mt-3 tipo-questao">Questão</label>
 						<textarea id="cad-questao" class="form-control tipo-questao"></textarea>
-
 
 						<label class="mt-3 tipo-questao">Pergunta(Com resposta Sim ou Não)</label>
 						<input type="text" class="form-control tipo-questao" id="cad-pergunta-sim-nao" name="cad-pergunta-sim-nao">
 
 					</div>
-					<div class="modal-footer">
 
+					<div class="modal-footer">
 						<button type="button" class="btn btn-primary tipo-topico" onClick="GravarQuestao('criterio')">Gravar Critério/Subcritério</button>
 						<button type="button" class="btn btn-primary tipo-questao" onClick="GravarQuestao('questao')">Gravar Questão</button>
 					</div>
@@ -656,12 +607,14 @@ $nav_menu_pagina = 'qaa';
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
+
 					<div class="modal-body">
 						<div id="resposta-modal-qaa-inteiro"></div>
 
 						<div id="carregar-listar-usuarios"></div>
 
 					</div>
+
 					<div class="modal-footer">
 						<select class="form-control" id="novo-user">
 							<option value="0">Novo usuário</option>
@@ -695,13 +648,12 @@ $nav_menu_pagina = 'qaa';
 						</button>
 					</div>
 					<div class="modal-body">
+
 						<label>Nome do Bloco</label>
 						<input type="text" class="form-control" id="edit-bloco">
 
-
-
-
 					</div>
+
 					<div class="modal-footer">
 
 						<button type="button" class="btn btn-primary" onClick="AtualizarBloco()">Atualizar Bloco</button>
@@ -722,12 +674,11 @@ $nav_menu_pagina = 'qaa';
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
+
 					<div class="modal-body">
+
 						<label>Nome do Critério</label>
 						<input type="text" class="form-control" id="edit-criterio">
-
-
-
 
 					</div>
 					<div class="modal-footer">
@@ -749,14 +700,12 @@ $nav_menu_pagina = 'qaa';
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
+
 					<div class="modal-body">
 						<label>Nome do Subcritério</label>
 						<input type="text" class="form-control" id="edit-subcriterio">
-
-
-
-
 					</div>
+
 					<div class="modal-footer">
 
 						<button type="button" class="btn btn-primary" onClick="AtualizarSubCriterio()">Atualizar Subcritério</button>
@@ -792,16 +741,9 @@ $nav_menu_pagina = 'qaa';
 			});
 
 
-
-
-
-
-
-
 			function AddQuestao(codigo_bloco) {
 
 				$var('#obter-codigo-bloco').val(codigo_bloco)
-
 
 
 				$var.ajax({
@@ -824,8 +766,6 @@ $nav_menu_pagina = 'qaa';
 
 					}
 				})
-
-
 
 			}
 
@@ -855,8 +795,6 @@ $nav_menu_pagina = 'qaa';
 				if (window.confirm("Você realmente excluir essa Questão?")) {
 
 
-
-
 					$var.ajax({
 						type: 'post',
 						data: 'codigo=' + codigo,
@@ -875,8 +813,6 @@ $nav_menu_pagina = 'qaa';
 			function DelVersao(versao) {
 
 				if (window.confirm("Você realmente excluir essa Versão?")) {
-
-
 
 
 					$var.ajax({
@@ -900,8 +836,6 @@ $nav_menu_pagina = 'qaa';
 				if (window.confirm("Você realmente excluir esse Anexo?")) {
 
 
-
-
 					$var.ajax({
 						type: 'post',
 						data: 'codigo=' + codigo,
@@ -913,11 +847,7 @@ $nav_menu_pagina = 'qaa';
 
 						}
 					})
-
 				}
-
-
-
 			}
 
 
@@ -961,7 +891,6 @@ $nav_menu_pagina = 'qaa';
 
 					checkeds.push($var(this).val());
 				});
-
 
 
 
@@ -1017,11 +946,8 @@ $nav_menu_pagina = 'qaa';
 						}
 
 						$var('#resposta-alertas').html(retorno2);
-
 					}
 				})
-
-
 			}
 
 
@@ -1069,7 +995,6 @@ $nav_menu_pagina = 'qaa';
 						}
 					})
 				}
-
 			}
 
 
@@ -1100,9 +1025,7 @@ $nav_menu_pagina = 'qaa';
 			function AdicionarResponsavel2(variavel) {
 
 
-
 				var usuario = $j("#novo-user option:selected").val()
-
 
 
 				$j.ajax({
@@ -1129,7 +1052,6 @@ $nav_menu_pagina = 'qaa';
 				if (variavel == 'sim') {
 					$var('#upload-arquivos').show()
 					$var('#upload-arquivos').load('upload-arquivos-qaa.php')
-
 				}
 
 
@@ -1153,9 +1075,6 @@ $nav_menu_pagina = 'qaa';
 
 		<script>
 			$g = jQuery.noConflict()
-
-
-
 
 
 			$g(document).on('change', '#photo', function() {
@@ -1190,12 +1109,8 @@ $nav_menu_pagina = 'qaa';
 
 						CarregarAnexos()
 
-
-
 					}
 				});
-
-
 			})
 
 
@@ -1249,13 +1164,13 @@ $nav_menu_pagina = 'qaa';
 							}
 						}
 					})
+
 					document.location.reload(true);
 
 				} else {
 					alert("Você precisa responder todas as questões!")
 					// alert('validação 2')
 				}
-
 			}
 
 
@@ -1274,18 +1189,8 @@ $nav_menu_pagina = 'qaa';
 					success: function(retorno) {
 
 						$ba('#carrega-anexos-qaa').html(retorno);
-
-
 					}
 				})
-
-
-
-
-
-
-
-
 			}
 
 
@@ -1293,12 +1198,6 @@ $nav_menu_pagina = 'qaa';
 
 				$ba('.desativar').toggle()
 			}
-
-
-
-
-
-
 
 			function AtualizarNomeAnexo(antigo) {
 
@@ -1315,8 +1214,6 @@ $nav_menu_pagina = 'qaa';
 
 					}
 				})
-
-
 			}
 
 
@@ -1333,7 +1230,6 @@ $nav_menu_pagina = 'qaa';
 					$ba('.tipo-topico').hide()
 					$ba('.tipo-geral').show()
 				}
-
 
 			}
 
@@ -1359,7 +1255,6 @@ $nav_menu_pagina = 'qaa';
 						$ba("#edit-bloco").val(retorno)
 					}
 				})
-
 			}
 
 			function AtualizarBloco() {
@@ -1374,7 +1269,6 @@ $nav_menu_pagina = 'qaa';
 						location.reload()
 					}
 				})
-
 			}
 
 			function EditarCriterio(codigo) {
@@ -1387,7 +1281,6 @@ $nav_menu_pagina = 'qaa';
 						$ba("#edit-criterio").val(retorno)
 					}
 				})
-
 			}
 
 
@@ -1403,7 +1296,6 @@ $nav_menu_pagina = 'qaa';
 						location.reload()
 					}
 				})
-
 			}
 
 			function EditarSubCriterio(codigo) {
@@ -1416,7 +1308,6 @@ $nav_menu_pagina = 'qaa';
 						$ba("#edit-subcriterio").val(retorno)
 					}
 				})
-
 			}
 
 
@@ -1432,7 +1323,6 @@ $nav_menu_pagina = 'qaa';
 						location.reload()
 					}
 				})
-
 			}
 
 
@@ -1452,6 +1342,7 @@ $nav_menu_pagina = 'qaa';
 			$rodape = jQuery.noConflict()
 
 			function AtivarLink() {
+
 				$rodape('#<?php echo $nav_menu_principal ?>').addClass('show')
 				$rodape('#menu-<?php echo $nav_menu_pagina ?>').css('font-weight', 'bold')
 

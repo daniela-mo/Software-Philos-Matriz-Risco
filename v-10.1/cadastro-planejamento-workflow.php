@@ -301,17 +301,17 @@ $nav_menu_pagina = 'workflow';
 
 							<div class="col-md-3 mb-4">
 								<label>Data de envio do plano de ação</label>
-								<input type="date" name="dtEnvioPlanoAcao" id="dtEnvioPlanoAcao" class="form-control">
+								<input type="text" name="dtEnvioPlanoAcao" id="dtEnvioPlanoAcao" class="form-control data">
 							</div>
 
 							<div class="col-md-3 mb-4">
 								<label>Data para retorno com o prazo</label>
-								<input type="date" name="dtRetornoPrazo" id="dtRetornoPrazo" class="form-control" onChange="calcula_prazo()">
+								<input type="text" name="dtRetornoPrazo" id="dtRetornoPrazo" class="form-control data" onChange="calcula_prazo()">
 							</div>
 
 							<div class=" col-md-3 mb-4">
 								<label>Data da devolutiva</label>
-								<input type="date" name="dtDevolutiva" id="dtDevolutiva" class="form-control" onBlur="calcula_dataDevolutiva()">
+								<input type="text" name="dtDevolutiva" id="dtDevolutiva" class="form-control data" onBlur="calcula_dataDevolutiva()">
 							</div>
 
 							<div class="col-md-3 mb-4">
@@ -332,12 +332,12 @@ $nav_menu_pagina = 'workflow';
 
 							<div class="col-md-3 mb-4">
 								<label>Prazo para atendimento do plano de ação</label>
-								<input type="date" name="pzAtendPlanAcao" id="pzAtendPlanAcao" class="form-control" onChange="calcula_prazoAtend()">
+								<input type="date" name="pzAtendPlanAcao" id="pzAtendPlanAcao" class="form-control data" onChange="calcula_prazoAtend()">
 							</div>
 
 							<div class="col-md-3 mb-4">
 								<label>Data de atendimento do plano de ação</label>
-								<input type="date" name="datAtendPlanAcao" id="datAtendPlanAcao" class="form-control" onBlur="calcula_dataAtendimento()">
+								<input type="text" name="datAtendPlanAcao" id="datAtendPlanAcao" class="form-control data" onBlur="calcula_dataAtendimento()">
 							</div>
 
 
@@ -410,6 +410,46 @@ $nav_menu_pagina = 'workflow';
 		});
 
 		var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+
+
+
+
+		$ff('#dtEnvioPlanoAcao').datepicker({
+			uiLibrary: 'bootstrap4',
+			iconsLibrary: 'fontawesome',
+			locale: 'pt-br',
+			format: 'dd/mm/yyyy'
+
+		});
+		$ff('#dtRetornoPrazo').datepicker({
+			uiLibrary: 'bootstrap4',
+			iconsLibrary: 'fontawesome',
+			locale: 'pt-br',
+			format: 'dd/mm/yyyy'
+
+		});
+		$ff('#dtDevolutiva').datepicker({
+			uiLibrary: 'bootstrap4',
+			iconsLibrary: 'fontawesome',
+			locale: 'pt-br',
+			format: 'dd/mm/yyyy'
+
+		});
+		$ff('#pzAtendPlanAcao').datepicker({
+			uiLibrary: 'bootstrap4',
+			iconsLibrary: 'fontawesome',
+			locale: 'pt-br',
+			format: 'dd/mm/yyyy'
+
+		});
+		$ff('#datAtendPlanAcao').datepicker({
+			uiLibrary: 'bootstrap4',
+			iconsLibrary: 'fontawesome',
+			locale: 'pt-br',
+			format: 'dd/mm/yyyy'
+
+		});
+
 
 
 

@@ -14,8 +14,7 @@ header("Pragma: no-cache");
 	<tr>
 
 		<th>RELATÓRIO MATRIZ DE RISCOS</th>
-		<th> POSITIVO TECNOLOGIA S.A.</th>
-		<th>(81.243.735/0001-48)</th>
+		<th> <?php include('header2.php'); ?></th>
 	</tr>
 
 	<tr>

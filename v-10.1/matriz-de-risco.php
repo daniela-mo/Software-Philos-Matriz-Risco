@@ -3940,7 +3940,7 @@ $nav_menu_pagina = 'matrizderiscos';
         function AtualizarItens(codigo) {
 
           var nome = $g('#alt-nome').val()
-          var objetivo = $g('#alt-objetivo').val()
+          var objetivo = $g('#alt-controle').val()
           var numero = $g('#alt-numero').val()
 
 
@@ -3980,7 +3980,7 @@ $nav_menu_pagina = 'matrizderiscos';
             success: function(retorno) {
               CarregarIshikawa('Método')
 
-              $g('#resposta-editar-').html(retorno)
+              $g('#resposta-editar-efeito').html(retorno)
             }
           })
         }
@@ -4117,34 +4117,34 @@ $nav_menu_pagina = 'matrizderiscos';
         }
 
 
-        function AtualizarAreaPrincipal(codigo) {
-          var novaareaprincipal = $g("#cad-area-nova-principal option:selected").val()
+        // function AtualizarAreaPrincipal(codigo) {
+        //   var novaareaprincipal = $g("#cad-area-nova-principal option:selected").val()
 
 
-          $g.ajax({
-            type: 'post',
-            data: 'codigo_matriz=<?php echo $_REQUEST['cod'] ?>&area=' + novaareaprincipal + '&id=<?php echo $id_principal ?>',
-            url: 'funcoes/atualizar-principal.php',
-            success: function(retorno) {
-              location.reload()
-            }
-          })
-        }
+        //   $g.ajax({
+        //     type: 'post',
+        //     data: 'codigo_matriz=<?php echo $_REQUEST['cod'] ?>&area=' + novaareaprincipal + '&id=<?php echo $id_principal ?>',
+        //     url: 'funcoes/atualizar-principal.php',
+        //     success: function(retorno) {
+        //       location.reload()
+        //     }
+        //   })
+        // }
 
-        function AtualizarDemaisAreas(codigo, id) {
+        // function AtualizarDemaisAreas(codigo, id) {
 
-          var demaisareasnova = $g("#cad-area-nova-demais option:selected").val()
+        //   var demaisareasnova = $g("#cad-area-nova-demais option:selected").val()
 
-          $g.ajax({
-            type: 'post',
-            data: 'codigo_matriz=<?php echo $_REQUEST['cod'] ?>&area=' + demaisareasnova + '&id=<?php echo $id_demais ?>',
-            url: 'funcoes/atualizar-demais.php',
-            success: function(retorno) {
-              location.reload()
+        //   $g.ajax({
+        //     type: 'post',
+        //     data: 'codigo_matriz=<?php echo $_REQUEST['cod'] ?>&area=' + demaisareasnova + '&id=<?php echo $id_demais ?>',
+        //     url: 'funcoes/atualizar-demais.php',
+        //     success: function(retorno) {
+        //       location.reload()
 
-            }
-          })
-        }
+        //     }
+        //   })
+        // }
 
 
         function AtualizarQaa() {
@@ -4213,7 +4213,7 @@ $nav_menu_pagina = 'matrizderiscos';
               url: 'funcoes/editar-inerente.php',
               success: function(retorno) {
                 $g('#resposta-editar-inerente').html(retorno)
-
+                location.href = 'matriz-de-risco.php?cod=<?php echo $codigo ?>&aba=avaliacao'
               }
             })
           }
@@ -4235,7 +4235,7 @@ $nav_menu_pagina = 'matrizderiscos';
               url: 'funcoes/editar-residual.php',
               success: function(retorno) {
                 $g('#resposta-editar-residual').html(retorno)
-
+                location.href = 'matriz-de-risco.php?cod=<?php echo $codigo ?>&aba=avaliacao'
               }
             })
           }
@@ -4257,7 +4257,7 @@ $nav_menu_pagina = 'matrizderiscos';
               url: 'funcoes/editar-futuro.php',
               success: function(retorno) {
                 $g('#resposta-editar-futuro').html(retorno)
-
+                location.href = 'matriz-de-risco.php?cod=<?php echo $codigo ?>&aba=avaliacao'
               }
             })
           }
