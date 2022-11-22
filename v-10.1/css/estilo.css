@@ -1,0 +1,161 @@
+.cor-texto-padrao {
+  color: #03133b;
+}
+
+.bg-cinza {
+  background-color: #e4e4e4;
+  border: none;
+  border-right: solid 1px #d8d8d8;
+}
+
+.cor-icone-padrao {
+  color: #e4e4e4;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-control {
+  background-color: #e7f2fe;
+}
+
+.btn-primary {
+  background-color: #031335;
+  border: none;
+}
+
+.grupo-permissao {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.div-frete {
+  display: none;
+}
+
+.sidenav-second-level li {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.bg-padrao {
+  background-color: #031335;
+  color: white;
+}
+
+.breadcrumb-item {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #e7f3ff;
+}
+
+.btn-adicionar {
+  cursor: pointer;
+}
+
+.bg-padrao {
+  background-color: #031335;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer_red {
+  cursor: pointer;
+  color: red;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  background-color: #e7f2fe;
+}
+
+#cad-nivel-do-risco-inerente {
+  border: solid 1px #7f7f7f;
+  font-size: 18px;
+  padding: 2px 2px 2px 5px;
+  height: 35px;
+}
+
+#cad-nivel-do-risco-residual {
+  border: solid 1px #7f7f7f;
+  font-size: 18px;
+  padding: 2px 2px 2px 5px;
+  height: 35px;
+}
+
+#cad-nivel-do-risco-futuro {
+  border: solid 1px #7f7f7f;
+  font-size: 18px;
+  padding: 2px 2px 2px 5px;
+  height: 35px;
+}
+
+#sanfona1,
+#sanfona2,
+#sanfona3,
+#sanfona4,
+#sanfona5,
+#sanfona6 {
+  background-color: #e9ecef;
+  width: 100%;
+}
+
+#sanfona1 h4,
+#sanfona2 h4,
+#sanfona3 h4,
+#sanfona4 h4,
+#sanfona5 h4,
+#sanfona6 h4 {
+  padding: 10px 10px;
+  font-size: 17px;
+}
+
+#sanfona-conteudo1,
+#sanfona-conteudo2,
+#sanfona-conteudo3,
+#sanfona-conteudo4,
+#sanfona-conteudo5,
+#sanfona-conteudo6 {
+  border: solid 1px #7f7f7f;
+}
+
+.form-cores,
+.form-cores option {
+  font-weight: bold;
+}
+
+.btn-padrao {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-padrao:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.pos-causa {
+  display: none;
+}
+
+.add-causa {
+  display: none;
+}
+
+.maiusculas {
+  text-transform: uppercase;
+}
