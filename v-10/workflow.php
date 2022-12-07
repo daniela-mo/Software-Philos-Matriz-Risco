@@ -134,6 +134,7 @@ $nav_menu_pagina = 'workflow';
 								<!-- <th style="width:120px">Dias de atraso</th> -->
 								<!-- <th style="width:210px">Status prazo atendimento plano de ação</th> -->
 								<!-- <th style="width:250px">Descrição</th> -->
+								<th style="width:250px">Risco</th>
 								<th>Ação</th>
 
 							</tr>
@@ -258,6 +259,7 @@ $nav_menu_pagina = 'workflow';
 
 									<td><a class="text-dark"><?php echo $registros['descricao'] ?></a></td> -->
 
+									<td><a class="text-dark" style="width:110px"><?php echo $registros['risco'] ?></a></td>
 
 
 
