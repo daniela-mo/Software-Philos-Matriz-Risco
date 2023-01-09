@@ -1,0 +1,1 @@
+ <?php setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese'); ?> <?php date_default_timezone_set('America/Sao_Paulo'); ?><?php mysqli_connect(111111111, 22222222222, 3333333333,44444444); ?>
