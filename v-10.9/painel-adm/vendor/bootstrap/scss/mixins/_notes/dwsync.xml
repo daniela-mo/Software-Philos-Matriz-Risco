@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="_alert.scss" server="braol.com.br/public_html/" local="132898821092859851" remote="132868419000000000" Dst="0" />
+<file name="_background-variant.scss" server="braol.com.br/public_html/" local="132898821099130367" remote="132868419000000000" Dst="0" />
+<file name="_badge.scss" server="braol.com.br/public_html/" local="132898821099550404" remote="132868419000000000" Dst="0" />
+<file name="_box-shadow.scss" server="braol.com.br/public_html/" local="132898821105220873" remote="132868419000000000" Dst="0" />
+<file name="_breakpoints.scss" server="braol.com.br/public_html/" local="132898821106758901" remote="132868419000000000" Dst="0" />
+<file name="_border-radius.scss" server="braol.com.br/public_html/" local="132898821107238936" remote="132868419000000000" Dst="0" />
+<file name="_buttons.scss" server="braol.com.br/public_html/" local="132898821111557902" remote="132868419000000000" Dst="0" />
+<file name="_caret.scss" server="braol.com.br/public_html/" local="132898821112837892" remote="132868419000000000" Dst="0" />
+<file name="_clearfix.scss" server="braol.com.br/public_html/" local="132898821114768069" remote="132868419000000000" Dst="0" />
+<file name="_deprecate.scss" server="braol.com.br/public_html/" local="132898821118426467" remote="132868419000000000" Dst="0" />
+<file name="_float.scss" server="braol.com.br/public_html/" local="132898821119016529" remote="132868419000000000" Dst="0" />
+<file name="_forms.scss" server="braol.com.br/public_html/" local="132898821121486140" remote="132868419000000000" Dst="0" />
+<file name="_gradients.scss" server="braol.com.br/public_html/" local="132898821124876421" remote="132868419000000000" Dst="0" />
+<file name="_grid-framework.scss" server="braol.com.br/public_html/" local="132898821125876509" remote="132868419000000000" Dst="0" />
+<file name="_grid.scss" server="braol.com.br/public_html/" local="132898821128246712" remote="132868419000000000" Dst="0" />
+<file name="_hover.scss" server="braol.com.br/public_html/" local="132898821131066944" remote="132868419000000000" Dst="0" />
+<file name="_image.scss" server="braol.com.br/public_html/" local="132898821132817102" remote="132868419000000000" Dst="0" />
+<file name="_list-group.scss" server="braol.com.br/public_html/" local="132898821134814111" remote="132868419000000000" Dst="0" />
+<file name="_lists.scss" server="braol.com.br/public_html/" local="132898821137524320" remote="132868419000000000" Dst="0" />
+<file name="_nav-divider.scss" server="braol.com.br/public_html/" local="132898821139024458" remote="132868419000000000" Dst="0" />
+<file name="_pagination.scss" server="braol.com.br/public_html/" local="132898821142544751" remote="132868419000000000" Dst="0" />
+<file name="_reset-text.scss" server="braol.com.br/public_html/" local="132898821145115078" remote="132868419000000000" Dst="0" />
+<file name="_resize.scss" server="braol.com.br/public_html/" local="132898821145354978" remote="132868419000000000" Dst="0" />
+<file name="_screen-reader.scss" server="braol.com.br/public_html/" local="132898821149015288" remote="132868419000000000" Dst="0" />
+<file name="_size.scss" server="braol.com.br/public_html/" local="132898821151235472" remote="132868419000000000" Dst="0" />
+<file name="_table-row.scss" server="braol.com.br/public_html/" local="132898821151535490" remote="132868419000000000" Dst="0" />
+<file name="_text-emphasis.scss" server="braol.com.br/public_html/" local="132898821155655868" remote="132868419000000000" Dst="0" />
+<file name="_text-hide.scss" server="braol.com.br/public_html/" local="132898821157820347" remote="132868419000000000" Dst="0" />
+<file name="_text-truncate.scss" server="braol.com.br/public_html/" local="132898821158200365" remote="132868419000000000" Dst="0" />
+<file name="_transition.scss" server="braol.com.br/public_html/" local="132898821162030401" remote="132868419000000000" Dst="0" />
+<file name="_visibility.scss" server="braol.com.br/public_html/" local="132898821164167215" remote="132868419000000000" Dst="0" />
+</dwsync>
